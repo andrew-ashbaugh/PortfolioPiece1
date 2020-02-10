@@ -1,0 +1,631 @@
+fileFormatVersion: 2
+guid: b71dc00fbed548746b829838a91e30ed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -390100652430160799
+    second: Hood
+  - first:
+      213: -1528142271650740278
+    second: CharHairBack
+  - first:
+      213: 5191671738341351353
+    second: CharHairFront
+  - first:
+      213: 976165878056006467
+    second: coatTop
+  - first:
+      213: -2043804831759589900
+    second: CoatBicep
+  - first:
+      213: -7396630026262715601
+    second: CharHead
+  - first:
+      213: 299627275319322887
+    second: CharBodyTop
+  - first:
+      213: -1939268184508741444
+    second: CharBicep
+  - first:
+      213: -6225906163867641336
+    second: CharNeck
+  - first:
+      213: 6785225392388274747
+    second: CharCoatRef
+  - first:
+      213: 4745101570587079693
+    second: CharRefBody
+  - first:
+      213: 5216856603857605607
+    second: coatBottom
+  - first:
+      213: -6844321008979921057
+    second: CoatForarm
+  - first:
+      213: 2361219571900749155
+    second: CharForearm
+  - first:
+      213: 6558575365354458419
+    second: CharBodyBottom
+  - first:
+      213: -1093305698934893339
+    second: CharThigh
+  - first:
+      213: -221487392837692165
+    second: CoatLeg
+  - first:
+      213: 1790477649436346045
+    second: coatGlove
+  - first:
+      213: -7086559473458993951
+    second: CharHand
+  - first:
+      213: 8692907748705996839
+    second: CoatBoot
+  - first:
+      213: 2036377536647417143
+    second: CharCalf
+  - first:
+      213: 2083550011770017032
+    second: ChraFoot
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hood
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 647
+        width: 112
+        height: 156
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15533447}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c80410685169af0800000000000000
+      internalID: -390100652430160799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharHairBack
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 655
+        width: 52
+        height: 126
+      alignment: 9
+      pivot: {x: 0.7350006, y: 0.8976343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7cffb43b2facae0800000000000000
+      internalID: -1528142271650740278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharHairFront
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 758
+        width: 68
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5718815, y: 0.35623708}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf554a70f58c0840800000000000000
+      internalID: 5191671738341351353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coatTop
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 472
+        width: 116
+        height: 167
+      alignment: 9
+      pivot: {x: 0.59481025, y: 0.17803718}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343b263b1b90c8d00800000000000000
+      internalID: 976165878056006467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoatBicep
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 530
+        width: 78
+        height: 126
+      alignment: 9
+      pivot: {x: 0.5000004, y: 0.8491419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd1eb48552f2a3e0800000000000000
+      internalID: -2043804831759589900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharHead
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 607
+        width: 78
+        height: 97
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17245515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f236f9d1e24e95990800000000000000
+      internalID: -7396630026262715601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharBodyTop
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 511
+        width: 83
+        height: 193
+      alignment: 9
+      pivot: {x: 0.4852773, y: 0.15809433}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7092d6e5b6d782400800000000000000
+      internalID: 299627275319322887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharBicep
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 433
+        width: 54
+        height: 130
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8853985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8c3226cd55615e0800000000000000
+      internalID: -1939268184508741444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharNeck
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 525
+        width: 55
+        height: 60
+      alignment: 9
+      pivot: {x: 0.43334517, y: 0.113035075}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a11c984532999a0800000000000000
+      internalID: -6225906163867641336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharCoatRef
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 47
+        width: 119
+        height: 523
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a73427b86f92e50800000000000000
+      internalID: 6785225392388274747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharRefBody
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 50
+        width: 97
+        height: 509
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04bdf1ecbcf9d140800000000000000
+      internalID: 4745101570587079693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coatBottom
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 334
+        width: 108
+        height: 115
+      alignment: 9
+      pivot: {x: 0.5113149, y: 0.9037903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e3551de07ff56840800000000000000
+      internalID: 5216856603857605607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoatForarm
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 383
+        width: 67
+        height: 134
+      alignment: 9
+      pivot: {x: 0.5, y: 0.89213336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57320b1e461401a0800000000000000
+      internalID: -6844321008979921057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharForearm
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 320
+        width: 38
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.83799875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36518dbb0bcb4c020800000000000000
+      internalID: 2361219571900749155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharBodyBottom
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 344
+        width: 63
+        height: 115
+      alignment: 9
+      pivot: {x: 0.57758826, y: 0.82940805}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d8494cb8db40b50800000000000000
+      internalID: 6558575365354458419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharThigh
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 289
+        width: 53
+        height: 123
+      alignment: 9
+      pivot: {x: 0.5230563, y: 0.93713677}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e45318624cc3d0f0800000000000000
+      internalID: -1093305698934893339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoatLeg
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 160
+        width: 71
+        height: 156
+      alignment: 9
+      pivot: {x: 0.53442234, y: 0.8994986}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf49ea3c36e1decf0800000000000000
+      internalID: -221487392837692165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coatGlove
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 298
+        width: 53
+        height: 63
+      alignment: 9
+      pivot: {x: 0.45388678, y: 0.8297449}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db60ee09fed09d810800000000000000
+      internalID: 1790477649436346045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharHand
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 262
+        width: 31
+        height: 33
+      alignment: 9
+      pivot: {x: 0.46058112, y: 0.7962415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e42cc084bb77ad90800000000000000
+      internalID: -7086559473458993951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoatBoot
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 50
+        width: 93
+        height: 81
+      alignment: 9
+      pivot: {x: 0.4605808, y: 0.8017274}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7209cda5a8963a870800000000000000
+      internalID: 8692907748705996839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharCalf
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 123
+        width: 40
+        height: 111
+      alignment: 9
+      pivot: {x: 0.43889922, y: 0.7421978}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d4474949aa24c10800000000000000
+      internalID: 2036377536647417143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChraFoot
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 53
+        width: 53
+        height: 40
+      alignment: 9
+      pivot: {x: 0.20026556, y: 0.7138502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805105352b14aec10800000000000000
+      internalID: 2083550011770017032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
