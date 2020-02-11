@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6495981052244715254}
   - component: {fileID: 956464905283038420}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground_0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -6551456632857933372, guid: 7d1c4e24427c4df41a95810e0d9cbe77,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -91,9 +91,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4685728927080519054}
-  - component: {fileID: 1119658275465885962}
   - component: {fileID: 3349226791258477894}
-  m_Layer: 0
+  - component: {fileID: 1119658275465885962}
+  - component: {fileID: -1185501466665959532}
+  m_Layer: 9
   m_Name: Ground4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -115,6 +116,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3349226791258477894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8219298050658074203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd90f29b18abd904ebe5164046a2c923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  rb: {fileID: 0}
 --- !u!60 &1119658275465885962
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -166,16 +181,24 @@ PolygonCollider2D:
       - {x: 3.6930122, y: 0.6521592}
       - {x: 3.3433495, y: 0.7214751}
       - {x: 2.0562477, y: 0.685442}
---- !u!114 &3349226791258477894
-MonoBehaviour:
+--- !u!50 &-1185501466665959532
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8219298050658074203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd90f29b18abd904ebe5164046a2c923, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 15
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
