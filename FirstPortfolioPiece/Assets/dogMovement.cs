@@ -5,23 +5,37 @@ using UnityEngine;
 public class dogMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public ScrollSpeed gameManager;
-    public GameObject player;
-    public float maxDist;
+    public Animator anim;
+    public LayerMask sledLayer;
+    public Transform endCast;
+    public ScrollSpeed ss;
     // Start is called before the first frame update
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+      //  anim = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(player.transform.position, transform.position) < maxDist)
+        Collider2D coll = Physics2D.Linecast(transform.position, endCast.position, sledLayer).collider;
+
+        if(coll == null)
         {
-            rb.velocity = new Vector2(4f * gameManager.speed *2, rb.velocity.y);
-            Debug.Log(Vector3.Distance(player.transform.position, transform.position));
+            anim.speed = 0;
         }
-  
+        else
+        {
+            if(ss.speed/10>0)
+            {
+                anim.speed = 1 + ss.speed / 10;
+            }
+            else
+            {
+                anim.speed = 1;
+            }
+         
+        }
     }
 }

@@ -11,6 +11,7 @@ public class ScrollSpeed : MonoBehaviour
     private bool stop;
     public float defaultGroundSpeed;
     public float defaultMidGroundSpeed;
+    public float defaultFarBGSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,10 @@ public class ScrollSpeed : MonoBehaviour
             else if(grounds[i].gameObject.tag == "MidGround")
             {
                 grounds[i].speed = defaultMidGroundSpeed * speed;
+            }
+            else if (grounds[i].gameObject.tag == "FarBG")
+            {
+                grounds[i].speed = defaultFarBGSpeed * speed;
             }
         }
 

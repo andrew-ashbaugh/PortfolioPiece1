@@ -9,6 +9,7 @@ public class GroundRespawnScript : MonoBehaviour
     public Transform spawnLocation;
     public ScrollSpeed gameManager;
     public GameObject midGroundPrefab;
+    public GameObject farBG;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +45,15 @@ public class GroundRespawnScript : MonoBehaviour
         {
             GameObject tempGround = Instantiate(midGroundPrefab, spawnLocation.position, Quaternion.identity);
             gameManager.grounds.Add(tempGround.GetComponent<GroundMovement>());
+            gameManager.grounds.Remove(other.gameObject.GetComponent<GroundMovement>());
+            Destroy(other.gameObject);
+        }
+
+        if (other.gameObject.tag == "FarBG")
+        {
+            GameObject tempGround = Instantiate(farBG, spawnLocation.position, Quaternion.identity);
+            gameManager.grounds.Add(tempGround.GetComponent<GroundMovement>());
+            gameManager.grounds.Remove(other.gameObject.GetComponent<GroundMovement>());
             Destroy(other.gameObject);
         }
     }
