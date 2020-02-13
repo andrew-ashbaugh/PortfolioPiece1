@@ -8,6 +8,7 @@ public class MedicineSmashScript : MonoBehaviour
     public Rigidbody2D[] rbs;
     public GameObject medicineSprite;
     public bool smashed;
+    public CrateScript cs;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,16 +25,22 @@ public class MedicineSmashScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Ground" && smashed == false || other.gameObject.tag == "Sled" && smashed == false)
         {
-            for (int i = 0; i < colls.Length; i++)
-            {
-                colls[i].enabled = true;
-                rbs[i].bodyType = RigidbodyType2D.Dynamic;
-            }
-            smashed = true;
-            gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
-            gameObject.GetComponent<Collider2D>().enabled = false;
-            medicineSprite.SetActive(false);
-            Destroy(gameObject, 2f);
+            Smash();
         }
+    }
+
+    public void Smash()
+    {
+        for (int i = 0; i < colls.Length; i++)
+        {
+            colls[i].enabled = true;
+            rbs[i].bodyType = RigidbodyType2D.Dynamic;
+        }
+        smashed = true;
+        gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+        gameObject.GetComponent<Collider2D>().enabled = false;
+        medicineSprite.SetActive(false);
+        cs.medicine.Remove(gameObject);
+        Destroy(gameObject, 2f);
     }
 }

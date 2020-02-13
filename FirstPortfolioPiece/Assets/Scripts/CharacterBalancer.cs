@@ -22,7 +22,7 @@ public class CharacterBalancer : MonoBehaviour
         {
             transform.up += sled.transform.up * Time.deltaTime;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-            rb.velocity = sled.GetComponent<Rigidbody2D>().velocity;
+          //  rb.velocity = sled.GetComponent<Rigidbody2D>().velocity;
         }
         else
         {

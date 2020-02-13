@@ -8,6 +8,8 @@ TagManager:
   - Sled
   - MidGround
   - FarBG
+  - MedicineCrate
+  - UICanvas
   layers:
   - Default
   - TransparentFX
@@ -21,7 +23,7 @@ TagManager:
   - Ground
   - Sled
   - Dog
-  - 
+  - Medicine
   - 
   - 
   - 
@@ -44,6 +46,15 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 1305977319
+    locked: 0
+  - name: Player
+    uniqueID: 2386040307
+    locked: 0
+  - name: Ground
+    uniqueID: 2328616593
     locked: 0
   - name: UI
     uniqueID: 3117199141

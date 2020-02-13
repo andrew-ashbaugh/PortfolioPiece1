@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 4704ddda3a88e5e41b0a82ad52c8be6b
+guid: 39abcf79bafed304bb61846bbbff798e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5007465203087833557
-    second: SpeechBubble_0
+      213: 2572236292851511218
+    second: Trees_0
   - first:
-      213: -2918205943261008813
-    second: SpeechBubble_1
+      213: 6224024930817484846
+    second: Trees_1
   - first:
-      213: 8440040907545079927
-    second: SpeechBubble_2
+      213: -8911251428918342384
+    second: Trees_2
+  - first:
+      213: 2656247834339299217
+    second: Trees_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 2
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -72,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 3
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -84,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 3
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,64 +98,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpeechBubble_0
+      name: Trees_0
       rect:
         serializedVersion: 2
-        x: 102
-        y: 835
-        width: 508
-        height: 188
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 20
+        y: 339
+        width: 408
+        height: 665
+      alignment: 9
+      pivot: {x: 0.48502454, y: 0.03141507}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d9fd2f42171e7540800000000000000
-      internalID: 5007465203087833557
+      spriteID: 2bf28c1b74b62b320800000000000000
+      internalID: 2572236292851511218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpeechBubble_1
+      name: Trees_1
       rect:
         serializedVersion: 2
-        x: 286
-        y: 516
-        width: 195
-        height: 195
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 515
+        y: 339
+        width: 414
+        height: 650
+      alignment: 9
+      pivot: {x: 0.5029518, y: 0.06572153}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35c6e7ae7237087d0800000000000000
-      internalID: -2918205943261008813
+      spriteID: e282d82c2bd206650800000000000000
+      internalID: 6224024930817484846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpeechBubble_2
+      name: Trees_2
       rect:
         serializedVersion: 2
-        x: 445
-        y: 54
-        width: 1265
-        height: 306
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1074
+        y: 344
+        width: 370
+        height: 614
+      alignment: 9
+      pivot: {x: 0.49339467, y: 0.04622956}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7707df7fc7c012570800000000000000
-      internalID: 8440040907545079927
+      spriteID: 01d412b0a00e45480800000000000000
+      internalID: -8911251428918342384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_3
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 313
+        width: 371
+        height: 687
+      alignment: 9
+      pivot: {x: 0.50329393, y: 0.042863294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fc139f453ecd420800000000000000
+      internalID: 2656247834339299217
       vertices: []
       indices: 
       edges: []
