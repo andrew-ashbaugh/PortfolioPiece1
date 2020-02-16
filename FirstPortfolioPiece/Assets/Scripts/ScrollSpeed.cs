@@ -21,6 +21,7 @@ public class ScrollSpeed : MonoBehaviour
     public GameObject prompt2;
     public GameObject prompt1;
     public ParticleSystem snow;
+    public bool dead;
     // Start is called before the first frame update
     void Start()
     {
@@ -91,49 +92,52 @@ public class ScrollSpeed : MonoBehaviour
 
         commandCanvas.transform.position = commandPos.position;
 
-        if(Input.GetKeyDown(KeyCode.RightArrow))
+        if (dead == false) // no movement if your dead
         {
-            Gas();
-            if(commandCanvas.activeSelf == false)
+            if (Input.GetKeyDown(KeyCode.RightArrow))
             {
-                commandCanvas.SetActive(true);
+                Gas();
+                if (commandCanvas.activeSelf == false)
+                {
+                    commandCanvas.SetActive(true);
+                }
             }
-        }
 
-        if(Input.GetKeyUp(KeyCode.RightArrow))
-        {
-            EndGas();
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            Break();
-            if (commandCanvas.activeSelf == false)
+            if (Input.GetKeyUp(KeyCode.RightArrow))
             {
-                commandCanvas.SetActive(true);
+                EndGas();
             }
-        }
 
-        if (Input.GetKeyUp(KeyCode.LeftArrow))
-        {
-            EndBreak();
-        }
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                Break();
+                if (commandCanvas.activeSelf == false)
+                {
+                    commandCanvas.SetActive(true);
+                }
+            }
 
-        if(Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow))
-        {   if (commandCanvas.activeSelf == true)
+            if (Input.GetKeyUp(KeyCode.LeftArrow))
             {
-                commandAnim.SetBool("StartCommand", true);
+                EndBreak();
             }
-            if (prompt2.activeSelf == true)
-            {
-                prompt2.GetComponent<Animator>().SetBool("FadeOut",true);
+
+            if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow))
+            { if (commandCanvas.activeSelf == true)
+                {
+                    commandAnim.SetBool("StartCommand", true);
+                }
+                if (prompt2.activeSelf == true)
+                {
+                    prompt2.GetComponent<Animator>().SetBool("FadeOut", true);
+                }
             }
-        }
-        else
-        {
-            if (commandCanvas.activeSelf == true)
+            else
             {
-                commandAnim.SetBool("StartCommand", false);
+                if (commandCanvas.activeSelf == true)
+                {
+                    commandAnim.SetBool("StartCommand", false);
+                }
             }
         }
     }

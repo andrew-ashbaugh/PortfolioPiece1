@@ -9,6 +9,8 @@ public class dogMovement : MonoBehaviour
     public LayerMask sledLayer;
     public Transform endCast;
     public ScrollSpeed ss;
+    public GameObject snowParts;
+    public float timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,15 +21,21 @@ public class dogMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Collider2D coll = Physics2D.Linecast(transform.position, endCast.position, sledLayer).collider;
+        RaycastHit2D coll = Physics2D.Linecast(transform.position, endCast.position, sledLayer);
 
-        if(coll == null)
+        if(coll.collider == null)
         {
             anim.speed = 0;
+
         }
         else
         {
-            if(ss.speed/10>0)
+            if (timer >= 0.5f/(ss.speed/2))
+            {
+                Instantiate(snowParts, coll.point, Quaternion.identity);
+                timer = 0;
+            }
+            if (ss.speed/10>0)
             {
                 anim.speed = 1 + ss.speed / 10;
             }
@@ -37,5 +45,10 @@ public class dogMovement : MonoBehaviour
             }
          
         }
+    }
+
+    private void FixedUpdate()
+    {
+        timer += Time.fixedDeltaTime;
     }
 }

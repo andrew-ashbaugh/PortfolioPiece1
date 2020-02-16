@@ -9,10 +9,13 @@ public class MedicineSmashScript : MonoBehaviour
     public GameObject medicineSprite;
     public bool smashed;
     public CrateScript cs;
+    public GameObject smashFx;
+    public AudioSource smashAud;
     // Start is called before the first frame update
     void Start()
     {
-        
+        smashAud = gameObject.GetComponent<AudioSource>();
+        smashAud.pitch = Random.Range(0.6f, 1f);
     }
 
     // Update is called once per frame
@@ -42,5 +45,7 @@ public class MedicineSmashScript : MonoBehaviour
         medicineSprite.SetActive(false);
         cs.medicine.Remove(gameObject);
         Destroy(gameObject, 2f);
+        Instantiate(smashFx, transform.position, Quaternion.identity);
+        smashAud.enabled = true;
     }
 }

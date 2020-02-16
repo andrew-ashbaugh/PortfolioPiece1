@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour
     private Vector3 scale;
     public Animator anim;
     public GameObject prompt1;
+    public PlayerLose pl;
+    public bool grounded;
+    public AudioSource landSfx;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,42 +30,57 @@ public class PlayerController : MonoBehaviour
     {
         Collider2D coll = Physics2D.Linecast(transform.position, endCast.position, sledLayer).collider; // used for balancing the character
         speed = Input.GetAxis("Horizontal") * 5f;
-        if (coll != null)
+
+        if(coll!= null && grounded == false)
         {
-            transform.up += coll.transform.up * Time.deltaTime * 5;
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-            rb.velocity = new Vector2(speed, rb.velocity.y); // player movement
-            //  rb.velocity = sled.GetComponent<Rigidbody2D>().velocity;
-            anim.SetBool("inAir", false);
+            grounded = true;
+            landSfx.pitch = Random.Range(0.3f, 0.7f);
+            landSfx.Play();
         }
-        else
+        if(coll == null)
         {
-            rb.velocity = new Vector2(rb.velocity.x + -0.001f* gameManager.speed, rb.velocity.y);
-            rb.velocity = new Vector2(speed/2, rb.velocity.y); // player movement
-            rb.constraints = RigidbodyConstraints2D.None;
-            anim.SetBool("inAir", true);
+            grounded = false;
         }
+        if (pl.playerDied == false)
+        {
 
 
-        if(speed == 0)
-        {
-            anim.SetBool("isWalk", false);
-        }
-        else
-        {
-            prompt1.GetComponent<Animator>().SetBool("FadeOut", true);
-            if (coll!=null)
+            if (coll != null)
             {
-                anim.SetBool("isWalk", true);
+                transform.up += coll.transform.up * Time.deltaTime * 5;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                rb.velocity = new Vector2(speed, rb.velocity.y); // player movement
+                                                                 //  rb.velocity = sled.GetComponent<Rigidbody2D>().velocity;
+                anim.SetBool("inAir", false);
             }
-        }
+            else
+            {
+                rb.velocity = new Vector2(rb.velocity.x + -0.001f * gameManager.speed, rb.velocity.y);
+                rb.velocity = new Vector2(speed / 2, rb.velocity.y); // player movement
+                rb.constraints = RigidbodyConstraints2D.None;
+                anim.SetBool("inAir", true);
+            }
 
-        if (coll == null)
-        {
-            anim.SetBool("isWalk", false);
-        }
 
-      
+            if (speed == 0)
+            {
+                anim.SetBool("isWalk", false);
+            }
+            else
+            {
+                prompt1.GetComponent<Animator>().SetBool("FadeOut", true);
+                if (coll != null)
+                {
+                    anim.SetBool("isWalk", true);
+                }
+            }
+
+            if (coll == null)
+            {
+                anim.SetBool("isWalk", false);
+            }
+
+
             if (speed > 0.1f)
             {
 
@@ -74,15 +92,35 @@ public class PlayerController : MonoBehaviour
                 transform.localScale = new Vector3(-scale.x, scale.y, scale.z);
 
             }
-        
-      
 
-        if(Input.GetButtonDown("Fire1") && coll!=null) // jumping
-        {
-            rb.AddForce(Vector3.up * jumpForce);
+
+
+            if (Input.GetButtonDown("Fire1") && coll != null) // jumping
+            {
+                rb.AddForce(Vector3.up * jumpForce);
+            }
+
         }
-
-
        
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(pl.playerDied == false && other.gameObject.tag != "MedicineCrate")
+        {
+          
+            pl.playerDied = true;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Ground" && pl.playerDied == false)
+        {
+            pl.playerDied = true;
+            rb.velocity = Vector3.zero;
+            rb.AddTorque(500 * gameManager.speed);
+        }
     }
 }

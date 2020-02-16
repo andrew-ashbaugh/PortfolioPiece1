@@ -12,8 +12,10 @@ public class MedicineCalculator : MonoBehaviour
     private Color medDefault;
 
     // Start is called before the first frame update
+
     void Start()
     {
+        meds = 3;
         medDefault = medicineText.color;
         InvokeRepeating("CalcMeds", 0, 0.5f);
     }
@@ -22,6 +24,7 @@ public class MedicineCalculator : MonoBehaviour
     void Update()
     {
         medicineText.text = meds.ToString();
+
     }
 
 
@@ -42,5 +45,7 @@ public class MedicineCalculator : MonoBehaviour
         {
             medicineText.color = medDefault;
         }
+
+      
     }
 }
